@@ -21,14 +21,40 @@ void desenhaRetangulo (int largura, int altura){
     }
 }
 
-
+void desenhaMoldura (int largura, int altura){
+    for (int i = 0; i < altura; i++)
+    {
+        for (int j = 0; j < largura; j++)
+        {
+            if (i == 0 || i == altura - 1 || j == 0 || j == largura - 1)
+            {
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
+}
 
 int main (){
     setlocale(LC_ALL, "portuguese");
     
-    int largura = 8, altura = 9;
+    int largura, altura;
+
+    printf("Qual a largura do retângulo? ");
+    scanf("%i", &largura);
+
+    printf("Qual a altura do retângulo? ");
+    scanf("%i", &altura);
     
     desenhaRetangulo(largura, altura);
+
+    printf("\n");
+
+    desenhaMoldura(largura, altura);
     
     return 0;
 }
