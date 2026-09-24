@@ -1,15 +1,18 @@
 /*
-    Name:
-    Author:
-    Date:
-    Description
+    Name: Exercício 1 da lista de exercícios 2
+    Author: Roniel Magalhães Costa
+    Date: 24/09/2026
+    Description: Crie uma sub-rotina desenhaRetangulo(largura, altura) que exibe um retângulo de asteriscos (*) com as
+    dimensões passadas. O algoritmo principal lê largura e altura e chama a sub-rotina. Variação: crie
+    também desenhaMoldura (borda apenas, interior vazio).
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 
-void desenhaRetangulo (int largura, int altura){
+void desenhaRetangulo (int largura, int altura)
+{
     int i, j; //i = largura e j = altura
     
     for (int j = 0; j < altura; j++){
@@ -21,7 +24,8 @@ void desenhaRetangulo (int largura, int altura){
     }
 }
 
-void desenhaMoldura (int largura, int altura){
+void desenhaMoldura (int largura, int altura)
+{
     for (int i = 0; i < altura; i++)
     {
         for (int j = 0; j < largura; j++)
