@@ -1,0 +1,13 @@
+sub-rotina dobro (valor numerico)
+    valor <- valor * 2
+fim sub-rotina
+
+algoritmo
+    declare valor
+
+    leia valor
+
+    dobro(valor)
+
+    escreva valor
+fim algoritmo

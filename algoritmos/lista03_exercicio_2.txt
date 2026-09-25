@@ -1,0 +1,21 @@
+sub-rotina maior_menor (valor1, valor2, maior, menor)
+    se valor1 > valor2 então
+        maior <- valor1
+        menor <- valor2
+
+    senão
+        maior <- valor2
+        menor <- valor1
+
+fim sub-rotina
+
+algoritmo
+    declare maior, menor, valor1, valor2 numérico
+
+    leia valor1, valor2
+
+    maior_menor(valor1, valor2, maior, menor)
+
+    escreva maior, menor
+
+fim algoritmo

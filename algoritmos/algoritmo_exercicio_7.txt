@@ -1,0 +1,15 @@
+função numérico calcula_L_D (a, b numerico)
+    calcula_L_D <- √a² + b²
+fim função
+
+algoritmo
+    declare a, b, c, L, D numerico
+    
+    leia a, b, c
+
+    L <- calcula_L_D(a, b)
+
+    D <- calcula_L_D(L, c)
+
+    escreva L, D
+fim algoritmo

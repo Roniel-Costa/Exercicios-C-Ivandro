@@ -1,0 +1,50 @@
+Função numerico converte_totalsegundos ( horas, minutos, segundos numérico)
+	Converte_totalsegundos <- (horas * 3600) + (minutos * 60) + segundos
+fim função
+
+função numérico converte_horas (total_segundos numerico)
+	converte_horas <- QUOCIENTE(total_segundos,3600)
+fim função
+
+função numérico converte_minutos(total_segundos numérico)
+	declare sobra numérico
+	sobra <- RESTO(total_segundos, 3600)
+	converte_minutos <- QUOCIENTE(sobra, 60)
+fim função
+
+função numérico converte_segundos (total_segundos numérico)
+	declare sobra numérico
+	sobra <-  RESTO (total_segundos, 3600)
+	converte_segundos <- RESTO (sobra, 60)
+fim função
+
+algoritmo
+	declare horas, minutos, segundos, total_segundos, escolha, resultado numérico
+	escreva “Menu de opções
+     1_ Converter segundos em horas e minutos
+     2_ Converter horas minutos em segundos
+     0_ Para sair”
+	Leia escolha
+
+	enquanto escolha ≠ 0 faça início
+		Caso escolha
+		Início
+			Igual 1 então
+			Leia total_segundos
+			resultado <- converte_horas(total_segundos)
+			escreva resultado
+			resultado <- converte_minutos(total_segundos)
+			escreva resultado
+			resultado <- converte_segundos(total_segundos)
+			escreva resultado
+
+			igual 2 então
+			leia horas, minutos, segundos
+			resultado <- converte_totalsegundos(horas, minutos, segundos)
+			senão escreva “Tchau”
+
+		fim
+	leia escolha
+fim
+fim algoritmo
+				

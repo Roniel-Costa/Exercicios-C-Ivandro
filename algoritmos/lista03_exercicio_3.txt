@@ -1,0 +1,26 @@
+sub-rotina soma_media (vetor[], soma, media)
+    declare i numerico
+    soma <- 0
+
+    para i <- 1 até 3 faça passo 1
+    inicio
+        soma <- soma + vetor[i]
+    fim
+
+    media <- soma / 3
+
+fim sub-rotina
+
+algoritmo
+    declare vetor[3], soma, media, j numerico
+
+    para j <- 1 até 3 faça passo 1
+    inicio  
+        leia vetor[j]
+    fim
+
+    soma_media(vetor[], soma, media)
+
+    escreva "A soma é " soma " e a media é " media
+
+fim algoritmo
