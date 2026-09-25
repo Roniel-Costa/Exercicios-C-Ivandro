@@ -1,0 +1,9 @@
+algoritmo
+    declare primeiro_nome, sobrenome literal
+
+    leia primeiro_nome
+    leia sobrenome
+
+    escreva primeiro_nome, sobrenome
+
+fim algoritmo

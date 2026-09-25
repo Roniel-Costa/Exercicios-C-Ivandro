@@ -1,0 +1,13 @@
+algoritmo
+    declare segredo, senha literal
+    segredo <- "segredo"
+
+    leia senha
+
+    se senha = segredo então
+        escreva "Bem vindo ao sistema com a senha mais facil do mundo"
+
+    senão
+        escreva "Senha incorreta"
+
+fim algoritmo
