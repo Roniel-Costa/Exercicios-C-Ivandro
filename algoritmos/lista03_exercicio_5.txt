@@ -1,0 +1,20 @@
+sub-rotina converte_segundos (total_segundos, horas, minutos, segundos numerico)
+    horas <- QUOCIENTE(total_segundos, 3600)
+
+    total_segundos <- RESTO(total_segundos, 3600)
+
+    minutos <- QUOCIENTE(total_segundos, 60)
+
+    segundos <- RESTO(total_segundos, 60)
+fim sub-rotina
+
+algoritmo
+    declare total_segundos, horas, minutos, segundos numerico
+
+    leia total_segundos
+
+    converte_segundos(total_segundos, horas, minutos, segundos)
+
+    escreva horas, " horas, ", minutos, " minutos e ", segundos, " segundos"
+
+fim algoritmo
