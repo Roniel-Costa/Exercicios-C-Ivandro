@@ -20,7 +20,7 @@ void desenhaRetangulo (int largura, int altura)
             printf ("*");
         }
     
-        printf("\n");
+        printf("\n");''
     }
 }
 
