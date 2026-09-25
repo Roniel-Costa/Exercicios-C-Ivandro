@@ -1,0 +1,30 @@
+sub_rotina ordem_crescente (a, b, c numerico)
+    declare aux numerico
+
+    se a > b então
+        aux <- a
+        a <- b
+        b <- aux
+    
+    se a > c então
+        aux <- a
+        a <- c
+        c <- aux
+    
+    se b > c então
+        aux <- b
+        b <- c
+        c <- aux
+        
+fim sub-rotina
+
+algoritmo
+    declare a, b, c numerico
+
+    leia a, b, c
+
+    ordem_crescente(a, b, c)
+
+    escreva a, b, c
+
+fim algoritmo
