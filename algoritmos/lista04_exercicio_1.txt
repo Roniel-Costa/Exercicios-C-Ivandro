@@ -1,0 +1,8 @@
+algoritmo
+    declare nome literal
+
+    leia nome
+
+    escreva nome
+
+fim algoritmo
