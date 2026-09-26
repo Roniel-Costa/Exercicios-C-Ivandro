@@ -1,0 +1,16 @@
+algoritmo
+    declare caracteres[100] literal
+            contador, i numérico
+
+    leia caracteres
+
+    contador <- 0
+    para i <- 1 até 100 faça passo 1
+        se caracteres[i] = "a" 
+            então incio
+                contador <- contador + 1
+        fim
+
+    escreva contador
+
+fim algoritmo

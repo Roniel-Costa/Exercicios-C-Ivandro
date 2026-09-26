@@ -1,0 +1,44 @@
+algoritmo
+    declare frase[100], palavra[20], caractere literal
+    declare i, j, posicao numérico
+    declare identica, achou_palavra lógico
+
+    leia frase, caractere, palavra
+    
+    posicao <- 0
+    para i <- 1 até 100 faça passo 1 início
+        se frase[i] = caractere então
+            se posicao = 0 então
+                posicao <- i
+    fim
+    
+    se posicao > 0 então
+        escreva "Posição do caractere: ", posicao
+    senão
+        escreva "Caractere não encontrado"
+
+    achou_palavra <- falso
+
+    para i <- 1 até 100 faça passo 1 início
+        // Se a letra da frase bater com a primeira letra da palavra, investigamos as próximas
+        se frase[i] = palavra[1] então início
+            identica <- verdadeiro
+            
+            // Testa as próximas letras (assumindo tamanho máximo 20 para a palavra)
+            para j <- 1 até 20 faça passo 1 início
+                se palavra[j] ≠ "" então
+                    se frase[i + j - 1] ≠ palavra[j] então
+                        identica <- falso
+            fim
+            
+            se identica = verdadeiro então
+                achou_palavra <- verdadeiro
+        fim
+    fim
+
+    se achou_palavra = verdadeiro então
+        escreva "A palavra aparece dentro da frase"
+    senão
+        escreva "A palavra não aparece na frase"
+
+fim algoritmo
