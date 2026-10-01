@@ -1,0 +1,16 @@
+algoritmo
+    declare frase[100] literal
+        i numerico
+
+    leia frase
+
+    para i <- 1 até 100 faça passo 1 inicio
+        se frase[i] ≠ " " então
+        escreva frase[i]
+
+        senão
+        escreva "\n"
+
+    fim
+
+fim algoritmo

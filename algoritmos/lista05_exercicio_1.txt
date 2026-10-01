@@ -1,0 +1,22 @@
+função numerico soma (vetor[], n numerico)
+    
+    se n = 0 então
+        soma <- 0
+
+    senão
+        soma <- vetor[n] + soma(vetor, n - 1)
+
+fim função
+
+algoritmo
+    declare vetor[3], i, resultado numerico
+
+    para i <-1 até 3 faça passo 1
+        inicio
+            leia vetor[i]
+        fim
+    
+    resultado <- soma(vetor, 3)
+
+    escreva resultado
+fim algoritmo
