@@ -1,0 +1,31 @@
+função numerico inverter (string[] literal, inicio, fim numerico)
+    declare aux literal
+
+    se inicio < fim então inicio
+
+        aux <- string[inicio]
+        string[inicio] <- string[fim]
+        string[fim] <- aux
+
+        inverter(string, inicio + 1, fim - 1)
+
+    fim
+    senão 
+        inverter <- 1
+fim função
+
+algoritmo
+    declare string[10]  literal
+            inicio, fim numerico
+
+    inicio <- 1
+    fim <- 10
+
+    leia string
+
+    inverter(string, inicio, fim)
+
+    escreva string
+
+fim algoritmo
+
