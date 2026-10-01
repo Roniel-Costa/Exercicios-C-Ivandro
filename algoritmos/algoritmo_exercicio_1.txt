@@ -1,0 +1,40 @@
+sub-rotina desenhaRetangulo (largura, altura numerico)
+    declare i, j numerico
+
+    para i <- 1 até altura faça passo1 inicio
+        para j <-1 até largura faça passo1 inicio
+            escreva "*"
+
+        fim
+        escreva "\n"
+    fim
+
+fim sub-rotina
+
+sub-rotina desenhaMoldura(largura, altura numerico)
+    declare i, j numerico
+
+    para i <- 1 até altura faça passo 1 inicio
+        para j <- 1 até largura faça passo 1 inicio
+
+            se i = 1 ou j = largura ou altura = i ou j = 1 então
+                escreva "*"
+
+            senão
+                escreva " "
+
+        fim
+        escreva "\n"
+    fim
+fim sub-rotina
+
+algoritmo 
+    declare largura, altura numerico
+
+    leia altura, largura
+
+    desenhaRetangulo(largura, altura)
+
+    desenhaMoldura(largura, altura)
+
+fim algoritmo

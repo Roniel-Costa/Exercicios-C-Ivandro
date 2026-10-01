@@ -1,0 +1,32 @@
+sub-rotina ordena3(a, b, c numerico)
+    declare aux numerico
+
+    se a > b então
+        aux <- a
+        a <- b
+        b <- aux
+    fim
+
+    se a > c então
+        aux <- a
+        a <- c
+        c <- aux
+    fim
+
+    se b > c então
+        aux <- b 
+        b <- c
+        c <- aux
+    fim
+    
+    escreva a, b, c
+fim sub-rotina
+
+algoritmo
+    declare a, b, c numerico
+
+    leia a, b, c
+
+    ordena3(a,b,c)
+
+fim algoritmo
