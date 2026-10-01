@@ -1,0 +1,19 @@
+função numerico potencia(base, expoente numerico)
+    se expoente = 0 então
+        potencia <- 1
+
+    senão
+        potencia <- base * potencia(base, expoente - 1)
+
+fim função
+
+algoritmo
+    declare base, expoente, resultado numerico
+
+    leia base, expoente
+
+    resultado <- potencia(base, expoente)
+
+    escreva resultado
+
+fim algoritmo
