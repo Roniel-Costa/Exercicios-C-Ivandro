@@ -1,0 +1,16 @@
+/*
+    Name: Exercício 1 da lista de exercícios 2
+    Author: Roniel Magalhães Costa
+    Date: 24/09/2026
+    Description: Crie uma sub-rotina desenhaRetangulo(largura, altura) que exibe um retângulo de asteriscos (*) com as
+    dimensões passadas. O algoritmo principal lê largura e altura e chama a sub-rotina. Variação: crie
+    também desenhaMoldura (borda apenas, interior vazio).
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+    setlocale(LC_ALL, "portuguese");
+    

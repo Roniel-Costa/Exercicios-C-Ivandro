@@ -43,7 +43,7 @@ void desenhaMoldura (int largura, int altura)
     
 }
 
-int main (){
+int main (void){
     setlocale(LC_ALL, "portuguese");
     
     int largura, altura;
@@ -60,5 +60,4 @@ int main (){
 
     desenhaMoldura(largura, altura);
     
-    return 0;
 }
