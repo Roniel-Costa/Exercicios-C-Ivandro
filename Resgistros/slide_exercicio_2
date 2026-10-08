@@ -1,10 +1,10 @@
 algorítmo
     declare LIVRO resgistro (
-        código literal
-        título literal
-        autor literal
-        ano_de_publicação numérico
-        editora literal
+        código literal,
+        título literal,
+        autor literal,
+        ano_de_publicação numérico,
+        editora literal,
     )
 
     LIVRO.código <- 1001

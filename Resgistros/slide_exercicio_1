@@ -1,10 +1,10 @@
 algoritmo
     declare FUNCIONARIO registro (
-        matricula numérico
-        nome literal
-        cargo literal
-        salário numérico
-        data_de_admissão literal
+        matricula numérico,
+        nome literal,
+        cargo literal,
+        salário numérico,
+        data_de_admissão literal,
     )
 
     leia FUNCIONARIO.nome
