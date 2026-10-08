@@ -7,10 +7,10 @@ algorítmo
         editora literal
     )
 
-    código <- 1001
-    título <- algoritmo
-    autor <- Forbellone
-    ano_de_publicação <- 2019
-    editora <- GEN
+    LIVRO.código <- 1001
+    LIVRO.título <- algoritmo
+    LIVRO.autor <- Forbellone
+    LIVRO.ano_de_publicação <- 2019
+    LIVRO.editora <- GEN
 
 fim algorítmo
