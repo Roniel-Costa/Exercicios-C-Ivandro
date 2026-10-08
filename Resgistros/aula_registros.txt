@@ -1,0 +1,17 @@
+Registros é um como se fosse um vetor que pode assumir mais de um tipo de dado (literal, lógico, numérico);
+
+formato do registro
+declare NOME_DO_REGISTRO registro (
+    ****** literal,
+    ****** numerico,
+    ****** lógico,
+)
+
+ex: em um cadastro do aluno, ele tem matrícula (numerico), CPF (numerico), telefone(numerico), endereço(literal), curso(literal)
+ativo(lógico)
+
+Para ter acesso aos campos do registro:
+IDENTIFICADOR.CAMPO
+ALUNO.telefone
+Só pode ser lido ou escrito campo por campo (Ex: escreva Passagem.destino, leia Passagem.nome)
+

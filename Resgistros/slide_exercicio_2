@@ -1,0 +1,16 @@
+algorítmo
+    declare LIVRO resgistro (
+        código literal
+        título literal
+        autor literal
+        ano_de_publicação numérico
+        editora literal
+    )
+
+    código <- 1001
+    título <- algoritmo
+    autor <- Forbellone
+    ano_de_publicação <- 2019
+    editora <- GEN
+
+fim algorítmo
