@@ -1,0 +1,27 @@
+algoritmo
+    declare ALUNO registro (
+        matrícula numerico,
+        nome literal,
+        curso literal,
+        coeficiente_de_rendimento numérico,
+    )
+
+    declare TURMA[40] ALUNO
+    declare i numérico
+
+    Para i <- 0 até i < 40 faça passo 1
+        inicio
+            leia ALUNO[i].matrícula
+            leia ALUNO[i].nome
+            leia ALUNO[i].curso
+            leia ALUNO[i].coeficiente_de_rendimento
+        fim
+    
+    Para i <- 0 até i < 40 faça passo 1
+        inicio
+            escreva ALUNO[i].nome
+            escreva ALUNO[i].coeficiente_de_rendimento
+        fim
+
+    escreva ALUNO[15].coeficiente_de_rendimento
+fim algoritmo

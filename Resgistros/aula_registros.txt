@@ -15,3 +15,20 @@ IDENTIFICADOR.CAMPO
 ALUNO.telefone
 Só pode ser lido ou escrito campo por campo (Ex: escreva Passagem.destino, leia Passagem.nome)
 
+OBS: Não esqueça das vírgulas
+
+CONJUNTO DE REGISTROS:
+    Um vetor que cada posição é um registro, onde monta um conjunto.
+    Ex: Uma empresa tem vário funcionários, cada funcionário tem um cadastro
+
+    Estrutura
+        declare NOME_DO_VETOR[TAMANHO] NOME_DO_REGISTRO
+        ex: 
+            
+            declare passagem registro (
+            nome literal,
+            poltrona numérico,
+        )
+            declare ônibus[44] passagem
+
+
