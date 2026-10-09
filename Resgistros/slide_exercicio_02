@@ -11,17 +11,17 @@ algoritmo
 
     Para i <- 0 até i < 40 faça passo 1
         inicio
-            leia ALUNO[i].matrícula
-            leia ALUNO[i].nome
-            leia ALUNO[i].curso
-            leia ALUNO[i].coeficiente_de_rendimento
+            leia TURMA[i].matrícula
+            leia TURMA[i].nome
+            leia TURMA[i].curso
+            leia TURMA[i].coeficiente_de_rendimento
         fim
     
     Para i <- 0 até i < 40 faça passo 1
         inicio
-            escreva ALUNO[i].nome
-            escreva ALUNO[i].coeficiente_de_rendimento
+            escreva TURMA[i].nome
+            escreva TURMA[i].coeficiente_de_rendimento
         fim
 
-    escreva ALUNO[15].coeficiente_de_rendimento
+    escreva TURMA[15].coeficiente_de_rendimento
 fim algoritmo
