@@ -1,0 +1,18 @@
+algorítmo
+    declare LIVROS registro (
+        nome literal,
+        autor literal,
+        data_de_publicação numérico,
+        estoque numérico,
+        repor lógico,
+        codigo numérico,
+    )
+
+    declare PET_SHOP registro (
+        nome_cachorro literal,
+        data_da_entrada numérico,
+        atendimento literal,
+        valor_serviço numérico,
+        já_é_cliente lógico,
+    )
+fim algorítmo
