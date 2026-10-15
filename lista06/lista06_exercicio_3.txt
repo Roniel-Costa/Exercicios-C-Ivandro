@@ -1,0 +1,57 @@
+algoritmo
+    declare pessoas [15] registro (
+        nome literal,
+        altura numérico,
+    )
+
+    declare i, ACM, ME, OP
+    escreva " 1_ Cadastrar"
+    escreva " 2_ Menores que 1,5m"
+    escreva " 3_ Maiores que 1,5m"
+    escreva " 4_ Altura acima da média"
+    leia OP
+    caso OP inicio
+        igual a 1 então inicio
+            para i <- 1 até 15 faça passo 1
+            inicio
+                leia pessoa[i].nome
+                leia pessoas[i].altura
+                ACM <- ACM + pessoas[i].altura
+            fim
+
+            ME <- ACM/15
+        fim
+
+        igual 2 então inicio
+            para i <- 1 até 15 faça passo 1
+                se pessoas[i].altura <- 1,5
+                    então inicio
+                        escreva pessoas[i].nome
+                        escreva pessoas[i].altura
+                fim
+            fim
+        fim
+
+        igual 3 então inicio
+            para i <- 1 até 15 faça passo 1
+                se pessoas[i].altura > 1,5
+                    então inicio
+                        escreva pessoas[i].nome
+                        escreva pessoas[i].altura
+                    fim
+                fim
+            fim
+        fim
+
+        igual 4 então inicio
+            para i <- 1 até 15 faça passo 1
+                se pessoas[i].altura > ME
+                    então inicio
+                        escreva pessoas[i].nome
+                        escreva pessoas[i].altura
+
+                    fim
+            fim
+        fim
+
+fim algoritmo
