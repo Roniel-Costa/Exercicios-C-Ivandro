@@ -1,5 +1,5 @@
 algoritmo
-    declare pessoas [15] registro (
+    declare pessoas[15] registro (
         nome literal,
         altura numérico,
     )
