@@ -12,24 +12,26 @@ algoritmo
     escreva " 5_ Exibir quais alunos ficaram acima da média da turma"
 
     leia  OP
+    media_turma_soma = 0
+    media_soma_por_aluno = 0
     
     caso OP início
         igual a 1 então início
             para i = 1 até 20 faça passo 1 início
-                leia Alunos.nome[i]
+                leia Alunos[i].nome
                 para j = 1 até 4 faça passo 1
-                    leia Alunos.nota_bimestre[j]
-                    media_turma_soma = media_turma_soma + Alunos.nota_bimestre[j]
+                    leia Alunos[i].nota_bimestre[j]
+                    media_turma_soma = media_turma_soma + Alunos[i].nota_bimestre[j]
                 fim           
             fim
         fim
 
         igual a 2 então início
             para i = 1 até 20 faça passo 1 início
-                escreva "Aluno", Alunos.nome[i]     
+                escreva "Aluno", Alunos[i].nome     
                 escreva " Notas: "
                 para j = 1 até 4 faça passo 1 início
-                    escreva Alunos.nota_bimestre[j]
+                    escreva Alunos[i].nota_bimestre[j]
                 fim
             fim
         fim
@@ -38,29 +40,29 @@ algoritmo
             para i = 1 até 20 faça passo 1 início
                 media_soma_por_aluno = 0
                 media = 0
-                escreva Aluno.nome[i]
+                escreva Alunos.nome[i]
                 para j = 1 até 4 faça passo 1 início
-                    media_soma_por_aluno = media_soma_por_aluno + Aluno.nota_bimestre[j]
+                    media_soma_por_aluno = media_soma_por_aluno + Alunos.nota_bimestre[j]
                 fim
                 media_do_aluno = media_soma_por_aluno / 4
-                escreva media
+                escreva media_do_aluno
             fim
         fim
 
         igual a 4 então início
-            media = media_turma_soma / 20
+            media = media_turma_soma / 80
             escreva media
         fim
 
         igual a 5 então início
             para i = 1 até 20 faça passo 1 início
                 para j = 1 até 4 faça passo 1 início
-                    media_soma_por_aluno = media_soma_por_aluno + Aluno.nota_bimestre[j]
+                    media_soma_por_aluno = media_soma_por_aluno + Alunos.nota_bimestre[j]
                 fim
                 media_do_aluno = media_soma_por_aluno / 4
 
                 se media_do_aluno > media início
-                    escreva Aluno.nome[i]
+                    escreva Alunos.nome[i]
                 fim
             escreva "\n"
             fim
