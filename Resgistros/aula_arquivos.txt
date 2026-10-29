@@ -1,0 +1,48 @@
+Arquivo é salvar sem a necessidade de um banco de dados
+    Registros são importantes para os arquivos
+
+Funciona como um fichario (estante de metal com varias pastas e papeis)
+    Um arquivo guarda Registros
+
+Modelo em algoritmo de Registros
+    declare <identificador_arquivo> arquivo composto <identif_registro>
+
+Você faz um registro e cria um arquivo para aquele registro (os campos do arquivo tem que ser igual ao do registro)
+
+Existem formas de acessar um arquivo
+    leitor
+        tipo LEITURA apenas lê mas não pode modificar o arquivo
+    
+    funcionário
+        tipo funcionário pode modificar o arquivos, etc.
+
+Como salvar os arquivos:
+    Igual um fichario (Abre a gaveta, Executa a operação, Fecha a gaveta)
+
+Rotinas:
+    Consultar(abre, localiza, copia, fecha)
+    Acrescentar(abre, posiciono no final, guarda, fecha)
+    Modificar(abre, localiza, copio, altero, gravo na mesma posição, fecha)
+    Eliminar(abre, localiza, reescreve sem o registro, fecha)
+
+Comandos
+    Abrir o arquivo (aponta para a primeira posição do arquivo, para mudar a posição é o AVANCE)
+        abra <identif_arquivo>
+        
+    Avance (vai para o proximo registro)
+        avance <identif_arquivo>
+
+    Copiando um registro do arquivo (você não modifica ou cria ele, você copia e depois reescreve)
+        copie <identif_arquivo>, <identif_registro>
+
+    Gravando um registro no arquivo
+        guarde <identif_arquivo>, <identif_registro>
+
+    Eliminado um registro de um arquivo
+        elimine <id_arquivo>
+
+    Fechar arquivo
+        fecha <identif_arquivo>
+
+    Fim do arquivo (para chegar ao fim do arquivo, retornando verdadeiro quando chegar no fim e falso quando ainda n chegar)
+        fda <identif_arquivo>
