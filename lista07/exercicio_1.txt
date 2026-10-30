@@ -1,0 +1,29 @@
+algoritmo
+    declare pessoas registro (
+        nome literal,
+        apelido literal,
+        número_de_celular numérico,
+        número_comercial numérico,
+    )
+    declare arq_pessoas arquivo composto pessoas
+
+    declare escolha literal
+
+    leia escolha
+
+    repita
+        avance pessoas
+    até fda pessoas
+
+    leia pessoas.nome
+    leia pessoas.apelido
+    leia pessoas.número_de_celular
+    leia pessoas.número_comercial
+    
+    guarde pessoas
+    fecha pessoas
+
+    leia escolha
+    
+    até escolha ≠ "Sim"
+fim algoritmo
